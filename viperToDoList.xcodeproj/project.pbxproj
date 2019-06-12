@@ -11,6 +11,7 @@
 		9CEC43FA22B13A9A004BC6FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CEC43F922B13A9A004BC6FE /* Assets.xcassets */; };
 		9CEC43FD22B13A9A004BC6FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CEC43FB22B13A9A004BC6FE /* LaunchScreen.storyboard */; };
 		9CEC440022B13A9A004BC6FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CEC43FF22B13A9A004BC6FE /* main.m */; };
+		9CEC441322B13EC2004BC6FE /* ToDoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CEC441222B13EC2004BC6FE /* ToDoItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,8 @@
 		9CEC43FC22B13A9A004BC6FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9CEC43FE22B13A9A004BC6FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CEC43FF22B13A9A004BC6FE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9CEC441122B13EC2004BC6FE /* ToDoItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToDoItem.h; sourceTree = "<group>"; };
+		9CEC441222B13EC2004BC6FE /* ToDoItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToDoItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,8 @@
 		9CEC440822B13B6D004BC6FE /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				9CEC441122B13EC2004BC6FE /* ToDoItem.h */,
+				9CEC441222B13EC2004BC6FE /* ToDoItem.m */,
 			);
 			name = Entity;
 			sourceTree = "<group>";
@@ -212,6 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CEC441322B13EC2004BC6FE /* ToDoItem.m in Sources */,
 				9CEC440022B13A9A004BC6FE /* main.m in Sources */,
 				9CEC43F222B13A99004BC6FE /* AppDelegate.m in Sources */,
 			);
