@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		9CEC43F222B13A99004BC6FE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CEC43F122B13A99004BC6FE /* AppDelegate.m */; };
-		9CEC43F522B13A99004BC6FE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CEC43F422B13A99004BC6FE /* ViewController.m */; };
-		9CEC43F822B13A99004BC6FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CEC43F622B13A99004BC6FE /* Main.storyboard */; };
 		9CEC43FA22B13A9A004BC6FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CEC43F922B13A9A004BC6FE /* Assets.xcassets */; };
 		9CEC43FD22B13A9A004BC6FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CEC43FB22B13A9A004BC6FE /* LaunchScreen.storyboard */; };
 		9CEC440022B13A9A004BC6FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CEC43FF22B13A9A004BC6FE /* main.m */; };
@@ -19,9 +17,6 @@
 		9CEC43ED22B13A99004BC6FE /* viperToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = viperToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CEC43F022B13A99004BC6FE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9CEC43F122B13A99004BC6FE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9CEC43F322B13A99004BC6FE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9CEC43F422B13A99004BC6FE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		9CEC43F722B13A99004BC6FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9CEC43F922B13A9A004BC6FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CEC43FC22B13A9A004BC6FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9CEC43FE22B13A9A004BC6FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,17 +53,94 @@
 		9CEC43EF22B13A99004BC6FE /* viperToDoList */ = {
 			isa = PBXGroup;
 			children = (
-				9CEC43F022B13A99004BC6FE /* AppDelegate.h */,
-				9CEC43F122B13A99004BC6FE /* AppDelegate.m */,
-				9CEC43F322B13A99004BC6FE /* ViewController.h */,
-				9CEC43F422B13A99004BC6FE /* ViewController.m */,
-				9CEC43F622B13A99004BC6FE /* Main.storyboard */,
+				9CEC440722B13B4A004BC6FE /* Core */,
+				9CEC440A22B13B77004BC6FE /* Flows */,
+				9CEC440622B13B31004BC6FE /* SupportingFiles */,
+			);
+			path = viperToDoList;
+			sourceTree = "<group>";
+		};
+		9CEC440622B13B31004BC6FE /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
 				9CEC43F922B13A9A004BC6FE /* Assets.xcassets */,
 				9CEC43FB22B13A9A004BC6FE /* LaunchScreen.storyboard */,
 				9CEC43FE22B13A9A004BC6FE /* Info.plist */,
 				9CEC43FF22B13A9A004BC6FE /* main.m */,
 			);
-			path = viperToDoList;
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		9CEC440722B13B4A004BC6FE /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				9CEC43F022B13A99004BC6FE /* AppDelegate.h */,
+				9CEC43F122B13A99004BC6FE /* AppDelegate.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		9CEC440822B13B6D004BC6FE /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
+		9CEC440A22B13B77004BC6FE /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				9CEC440B22B13BBA004BC6FE /* ToDoList */,
+			);
+			name = Flows;
+			sourceTree = "<group>";
+		};
+		9CEC440B22B13BBA004BC6FE /* ToDoList */ = {
+			isa = PBXGroup;
+			children = (
+				9CEC441022B13BEC004BC6FE /* Builder */,
+				9CEC440822B13B6D004BC6FE /* Entity */,
+				9CEC440D22B13BE0004BC6FE /* Interactor */,
+				9CEC440F22B13BE6004BC6FE /* Presenter */,
+				9CEC440E22B13BE4004BC6FE /* Router */,
+				9CEC440C22B13BDD004BC6FE /* View */,
+			);
+			name = ToDoList;
+			sourceTree = "<group>";
+		};
+		9CEC440C22B13BDD004BC6FE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		9CEC440D22B13BE0004BC6FE /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		9CEC440E22B13BE4004BC6FE /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Router;
+			sourceTree = "<group>";
+		};
+		9CEC440F22B13BE6004BC6FE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		9CEC441022B13BEC004BC6FE /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Builder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,7 +202,6 @@
 			files = (
 				9CEC43FD22B13A9A004BC6FE /* LaunchScreen.storyboard in Resources */,
 				9CEC43FA22B13A9A004BC6FE /* Assets.xcassets in Resources */,
-				9CEC43F822B13A99004BC6FE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,7 +212,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CEC43F522B13A99004BC6FE /* ViewController.m in Sources */,
 				9CEC440022B13A9A004BC6FE /* main.m in Sources */,
 				9CEC43F222B13A99004BC6FE /* AppDelegate.m in Sources */,
 			);
@@ -150,14 +220,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9CEC43F622B13A99004BC6FE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9CEC43F722B13A99004BC6FE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9CEC43FB22B13A9A004BC6FE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
