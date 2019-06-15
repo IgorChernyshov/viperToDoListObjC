@@ -46,7 +46,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
 	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"reuseID"];
-	cell.textLabel.text = @"Test";
+	cell.textLabel.text = self.todos[indexPath.row];
 	return cell;
 }
 

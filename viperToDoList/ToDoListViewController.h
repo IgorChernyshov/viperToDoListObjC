@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ToDoListViewController : UIViewController <ToDoListViewProtocol, UITableViewDataSource>
 
-@property (nonatomic, weak) id<ToDoListViewEventHandlerProtocol> eventHandler;
+@property (nonatomic, strong) id<ToDoListViewEventHandlerProtocol> eventHandler;
 
 @end
 
