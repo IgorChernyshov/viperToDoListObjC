@@ -14,6 +14,8 @@
 		9CEC441322B13EC2004BC6FE /* ToDoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CEC441222B13EC2004BC6FE /* ToDoItem.m */; };
 		D048733722B21B34004C21FF /* ToDoListInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = D048733622B21B34004C21FF /* ToDoListInteractor.m */; };
 		D08409EB22B4BC360083C8D8 /* ToDoListDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = D08409EA22B4BC360083C8D8 /* ToDoListDataBase.m */; };
+		D08409EE22B4C1B90083C8D8 /* ToDoListPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = D08409ED22B4C1B90083C8D8 /* ToDoListPresenter.m */; };
+		D08409F722B4CFE10083C8D8 /* ToDoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D08409F622B4CFE10083C8D8 /* ToDoListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,14 @@
 		D048733622B21B34004C21FF /* ToDoListInteractor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToDoListInteractor.m; sourceTree = "<group>"; };
 		D08409E922B4BC360083C8D8 /* ToDoListDataBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToDoListDataBase.h; sourceTree = "<group>"; };
 		D08409EA22B4BC360083C8D8 /* ToDoListDataBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToDoListDataBase.m; sourceTree = "<group>"; };
+		D08409EC22B4C1B90083C8D8 /* ToDoListPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToDoListPresenter.h; sourceTree = "<group>"; };
+		D08409ED22B4C1B90083C8D8 /* ToDoListPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToDoListPresenter.m; sourceTree = "<group>"; };
+		D08409F022B4C2A00083C8D8 /* ToDoListItemsProviderProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToDoListItemsProviderProtocol.h; sourceTree = "<group>"; };
+		D08409F222B4C2FA0083C8D8 /* ToDoListViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToDoListViewProtocol.h; sourceTree = "<group>"; };
+		D08409F322B4C3EA0083C8D8 /* ToDoListOutputProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToDoListOutputProtocol.h; sourceTree = "<group>"; };
+		D08409F422B4C4290083C8D8 /* ToDoListViewEventHandlerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToDoListViewEventHandlerProtocol.h; sourceTree = "<group>"; };
+		D08409F522B4CFE10083C8D8 /* ToDoListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToDoListViewController.h; sourceTree = "<group>"; };
+		D08409F622B4CFE10083C8D8 /* ToDoListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToDoListViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +120,7 @@
 		9CEC440B22B13BBA004BC6FE /* ToDoList */ = {
 			isa = PBXGroup;
 			children = (
+				D08409F122B4C2BE0083C8D8 /* Protocols */,
 				9CEC441022B13BEC004BC6FE /* Builder */,
 				9CEC440822B13B6D004BC6FE /* Entity */,
 				9CEC440D22B13BE0004BC6FE /* Interactor */,
@@ -123,6 +134,8 @@
 		9CEC440C22B13BDD004BC6FE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D08409F522B4CFE10083C8D8 /* ToDoListViewController.h */,
+				D08409F622B4CFE10083C8D8 /* ToDoListViewController.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -146,6 +159,8 @@
 		9CEC440F22B13BE6004BC6FE /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				D08409EC22B4C1B90083C8D8 /* ToDoListPresenter.h */,
+				D08409ED22B4C1B90083C8D8 /* ToDoListPresenter.m */,
 			);
 			name = Presenter;
 			sourceTree = "<group>";
@@ -164,6 +179,17 @@
 				D08409EA22B4BC360083C8D8 /* ToDoListDataBase.m */,
 			);
 			name = Services;
+			sourceTree = "<group>";
+		};
+		D08409F122B4C2BE0083C8D8 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D08409F022B4C2A00083C8D8 /* ToDoListItemsProviderProtocol.h */,
+				D08409F322B4C3EA0083C8D8 /* ToDoListOutputProtocol.h */,
+				D08409F222B4C2FA0083C8D8 /* ToDoListViewProtocol.h */,
+				D08409F422B4C4290083C8D8 /* ToDoListViewEventHandlerProtocol.h */,
+			);
+			name = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,8 +261,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D08409F722B4CFE10083C8D8 /* ToDoListViewController.m in Sources */,
 				D048733722B21B34004C21FF /* ToDoListInteractor.m in Sources */,
 				D08409EB22B4BC360083C8D8 /* ToDoListDataBase.m in Sources */,
+				D08409EE22B4C1B90083C8D8 /* ToDoListPresenter.m in Sources */,
 				9CEC441322B13EC2004BC6FE /* ToDoItem.m in Sources */,
 				9CEC440022B13A9A004BC6FE /* main.m in Sources */,
 				9CEC43F222B13A99004BC6FE /* AppDelegate.m in Sources */,
