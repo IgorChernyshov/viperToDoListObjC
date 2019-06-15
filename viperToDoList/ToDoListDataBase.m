@@ -16,7 +16,8 @@
 
 @implementation ToDoListDataBase
 
-+ (instancetype)sharedInstance {
++ (instancetype)sharedInstance
+{
 	static ToDoListDataBase *sharedInstance = nil;
 	static dispatch_once_t onceToken;
 	dispatch_once(&onceToken, ^{
@@ -25,7 +26,8 @@
 	return sharedInstance;
 }
 
-- (id)init {
+- (id)init
+{
 	if (self = [super init]) {
 		ToDoItem *firstItem = [[ToDoItem alloc] initWithTitle:@"Insurance" content:@"Purchase car insurance"];
 		ToDoItem *secondItem = [[ToDoItem alloc] initWithTitle:@"Mortage" content:@"Pay for mortage"];
