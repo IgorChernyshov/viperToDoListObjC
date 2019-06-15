@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ToDoItem : NSObject
 
+@property (nonatomic, strong, readonly) NSString *title;
+@property (nonatomic, strong, readonly) NSString *content;
 - (instancetype)initWithTitle:(NSString *)title content:(NSString *)content;
 
 @end

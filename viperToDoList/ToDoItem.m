@@ -21,7 +21,8 @@
 - (instancetype)initWithTitle:(NSString *)title content:(NSString *)content
 {
 	self = [super init];
-	if (self) {
+	if (self)
+	{
 		_title = title;
 		_content = content;
 	}
