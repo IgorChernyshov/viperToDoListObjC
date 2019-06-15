@@ -7,11 +7,9 @@
 //
 
 #import "ToDoListViewController.h"
-#import "ToDoListViewEventHandlerProtocol.h"
 
 @interface ToDoListViewController()
 
-@property (nonatomic, weak) id<ToDoListViewEventHandlerProtocol> eventHandler;
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSArray<NSString *> *todos;
 
@@ -21,7 +19,8 @@
 
 - (void)viewDidLoad
 {
-	self.todos = [NSArray new];
+	[super viewDidLoad];
+	
 	[self configureUI];
 	[self.eventHandler loadToDoItems];
 }
@@ -56,7 +55,7 @@
 
 - (void)showTodos:(NSArray<NSString *> *)todos
 {
-	self.todos = todos;
+	self.todos = [NSArray arrayWithArray:todos];
 	[self.tableView reloadData];
 }
 

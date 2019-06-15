@@ -7,14 +7,16 @@
 //
 
 #import "AppDelegate.h"
+#import "ToDoListModuleBuilder.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-	UIViewController *mainViewController = [UIViewController new];
+	
+	ToDoListModuleBuilder *builder = [ToDoListModuleBuilder new];
 	CGRect screenSize = [[UIScreen mainScreen] bounds];
 	self.window = [[UIWindow alloc] initWithFrame:screenSize];
-	self.window.rootViewController = mainViewController;
+	self.window.rootViewController = [builder buildToDoListModule];
 	[self.window makeKeyAndVisible];
 	return YES;
 }

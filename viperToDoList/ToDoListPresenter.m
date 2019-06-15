@@ -7,15 +7,6 @@
 //
 
 #import "ToDoListPresenter.h"
-#import "ToDoListItemsProviderProtocol.h"
-#import "ToDoListViewProtocol.h"
-
-@interface ToDoListPresenter()
-
-@property (nonatomic, weak) id<ToDoListViewProtocol> view;
-@property (nonatomic, strong) id<ToDoListItemsProviderProtocol> todoItemsProvider;
-
-@end
 
 @implementation ToDoListPresenter
 
@@ -34,6 +25,5 @@
 {
 	[self.todoItemsProvider provideToDoItems];
 }
-
 
 @end

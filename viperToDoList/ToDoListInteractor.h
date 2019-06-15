@@ -8,10 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import "ToDoListItemsProviderProtocol.h"
+#import "ToDoListOutputProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ToDoListInteractor : NSObject <ToDoListItemsProviderProtocol>
+
+@property (nonatomic, weak) id<ToDoListOutputProtocol> output;
 
 @end
 

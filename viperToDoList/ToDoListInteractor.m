@@ -8,14 +8,6 @@
 
 #import "ToDoListInteractor.h"
 #import "ToDoListDataBase.h"
-#import "ToDoListOutputProtocol.h"
-@class GreetingOutput;
-
-@interface ToDoListInteractor()
-
-@property (nonatomic, weak) id<ToDoListOutputProtocol> output;
-
-@end
 
 @implementation ToDoListInteractor
 

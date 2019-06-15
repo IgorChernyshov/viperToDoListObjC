@@ -16,6 +16,7 @@
 		D08409EB22B4BC360083C8D8 /* ToDoListDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = D08409EA22B4BC360083C8D8 /* ToDoListDataBase.m */; };
 		D08409EE22B4C1B90083C8D8 /* ToDoListPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = D08409ED22B4C1B90083C8D8 /* ToDoListPresenter.m */; };
 		D08409F722B4CFE10083C8D8 /* ToDoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D08409F622B4CFE10083C8D8 /* ToDoListViewController.m */; };
+		D08409FA22B4D4640083C8D8 /* ToDoListModuleBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = D08409F922B4D4640083C8D8 /* ToDoListModuleBuilder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,8 @@
 		D08409F422B4C4290083C8D8 /* ToDoListViewEventHandlerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToDoListViewEventHandlerProtocol.h; sourceTree = "<group>"; };
 		D08409F522B4CFE10083C8D8 /* ToDoListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToDoListViewController.h; sourceTree = "<group>"; };
 		D08409F622B4CFE10083C8D8 /* ToDoListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToDoListViewController.m; sourceTree = "<group>"; };
+		D08409F822B4D4640083C8D8 /* ToDoListModuleBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToDoListModuleBuilder.h; sourceTree = "<group>"; };
+		D08409F922B4D4640083C8D8 /* ToDoListModuleBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToDoListModuleBuilder.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,7 +128,6 @@
 				9CEC440822B13B6D004BC6FE /* Entity */,
 				9CEC440D22B13BE0004BC6FE /* Interactor */,
 				9CEC440F22B13BE6004BC6FE /* Presenter */,
-				9CEC440E22B13BE4004BC6FE /* Router */,
 				9CEC440C22B13BDD004BC6FE /* View */,
 			);
 			name = ToDoList;
@@ -149,13 +151,6 @@
 			name = Interactor;
 			sourceTree = "<group>";
 		};
-		9CEC440E22B13BE4004BC6FE /* Router */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Router;
-			sourceTree = "<group>";
-		};
 		9CEC440F22B13BE6004BC6FE /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +163,8 @@
 		9CEC441022B13BEC004BC6FE /* Builder */ = {
 			isa = PBXGroup;
 			children = (
+				D08409F822B4D4640083C8D8 /* ToDoListModuleBuilder.h */,
+				D08409F922B4D4640083C8D8 /* ToDoListModuleBuilder.m */,
 			);
 			name = Builder;
 			sourceTree = "<group>";
@@ -262,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D08409F722B4CFE10083C8D8 /* ToDoListViewController.m in Sources */,
+				D08409FA22B4D4640083C8D8 /* ToDoListModuleBuilder.m in Sources */,
 				D048733722B21B34004C21FF /* ToDoListInteractor.m in Sources */,
 				D08409EB22B4BC360083C8D8 /* ToDoListDataBase.m in Sources */,
 				D08409EE22B4C1B90083C8D8 /* ToDoListPresenter.m in Sources */,

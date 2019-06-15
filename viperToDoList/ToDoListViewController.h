@@ -8,10 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "ToDoListViewProtocol.h"
+#import "ToDoListViewEventHandlerProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ToDoListViewController : UIViewController <ToDoListViewProtocol, UITableViewDataSource>
+
+@property (nonatomic, weak) id<ToDoListViewEventHandlerProtocol> eventHandler;
 
 @end
 
