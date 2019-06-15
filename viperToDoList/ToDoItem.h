@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ToDoItem : NSObject
 
+- (instancetype)initWithTitle:(NSString *)title content:(NSString *)content;
+
 @end
 
 NS_ASSUME_NONNULL_END

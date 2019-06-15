@@ -12,6 +12,8 @@
 		9CEC43FD22B13A9A004BC6FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CEC43FB22B13A9A004BC6FE /* LaunchScreen.storyboard */; };
 		9CEC440022B13A9A004BC6FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CEC43FF22B13A9A004BC6FE /* main.m */; };
 		9CEC441322B13EC2004BC6FE /* ToDoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CEC441222B13EC2004BC6FE /* ToDoItem.m */; };
+		D048733722B21B34004C21FF /* ToDoListInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = D048733622B21B34004C21FF /* ToDoListInteractor.m */; };
+		D08409EB22B4BC360083C8D8 /* ToDoListDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = D08409EA22B4BC360083C8D8 /* ToDoListDataBase.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		9CEC43FF22B13A9A004BC6FE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9CEC441122B13EC2004BC6FE /* ToDoItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToDoItem.h; sourceTree = "<group>"; };
 		9CEC441222B13EC2004BC6FE /* ToDoItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToDoItem.m; sourceTree = "<group>"; };
+		D048733522B21B33004C21FF /* ToDoListInteractor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToDoListInteractor.h; sourceTree = "<group>"; };
+		D048733622B21B34004C21FF /* ToDoListInteractor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToDoListInteractor.m; sourceTree = "<group>"; };
+		D08409E922B4BC360083C8D8 /* ToDoListDataBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToDoListDataBase.h; sourceTree = "<group>"; };
+		D08409EA22B4BC360083C8D8 /* ToDoListDataBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToDoListDataBase.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,7 @@
 			children = (
 				9CEC43F022B13A99004BC6FE /* AppDelegate.h */,
 				9CEC43F122B13A99004BC6FE /* AppDelegate.m */,
+				D08409E822B4BC0B0083C8D8 /* Services */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -123,6 +130,8 @@
 		9CEC440D22B13BE0004BC6FE /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				D048733522B21B33004C21FF /* ToDoListInteractor.h */,
+				D048733622B21B34004C21FF /* ToDoListInteractor.m */,
 			);
 			name = Interactor;
 			sourceTree = "<group>";
@@ -146,6 +155,15 @@
 			children = (
 			);
 			name = Builder;
+			sourceTree = "<group>";
+		};
+		D08409E822B4BC0B0083C8D8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D08409E922B4BC360083C8D8 /* ToDoListDataBase.h */,
+				D08409EA22B4BC360083C8D8 /* ToDoListDataBase.m */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +235,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D048733722B21B34004C21FF /* ToDoListInteractor.m in Sources */,
+				D08409EB22B4BC360083C8D8 /* ToDoListDataBase.m in Sources */,
 				9CEC441322B13EC2004BC6FE /* ToDoItem.m in Sources */,
 				9CEC440022B13A9A004BC6FE /* main.m in Sources */,
 				9CEC43F222B13A99004BC6FE /* AppDelegate.m in Sources */,
