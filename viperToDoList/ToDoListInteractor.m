@@ -8,11 +8,12 @@
 
 #import "ToDoListInteractor.h"
 #import "ToDoListDataBase.h"
+#import "ToDoListOutputProtocol.h"
 @class GreetingOutput;
 
 @interface ToDoListInteractor()
 
-@property (nonatomic, weak) GreetingOutput *output;
+@property (nonatomic, weak) id<ToDoListOutputProtocol> output;
 
 @end
 
@@ -21,7 +22,7 @@
 - (void)provideToDoItems
 {
 	NSArray<ToDoItem *> *todos = [self getDataFromDataBase];
-	[self.output.receiveToDoItem todos];
+	[self.output receiveToDoItems:todos];
 }
 
 - (NSArray<ToDoItem *> *)getDataFromDataBase

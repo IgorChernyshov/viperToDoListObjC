@@ -7,16 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ToDoListItemsProviderProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol ToDoListInteractorOutput <NSObject>
-
-- (void)provideToDoItems;
-
-@end
-
-@interface ToDoListInteractor : NSObject <ToDoListInteractorOutput>
+@interface ToDoListInteractor : NSObject <ToDoListItemsProviderProtocol>
 
 @end
 
