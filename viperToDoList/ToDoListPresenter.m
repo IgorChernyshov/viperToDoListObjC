@@ -12,13 +12,13 @@
 
 - (void)receiveToDoItems:(nonnull NSArray<ToDoItem *> *)todos
 {
-	NSMutableArray<NSString *> *todosViewData = [NSMutableArray new];
+	NSMutableArray<NSString *> *todosViewModel = [NSMutableArray new];
 	for (ToDoItem *item in todos)
 	{
 		NSString *todo = [NSString stringWithFormat:@"%@ - %@", item.title, item.content];
-		[todosViewData addObject:todo];
+		[todosViewModel addObject:todo];
 	}
-	[self.view showTodos:[todos copy]];
+	[self.view showTodos:[todosViewModel copy]];
 }
 
 - (void)loadToDoItems
