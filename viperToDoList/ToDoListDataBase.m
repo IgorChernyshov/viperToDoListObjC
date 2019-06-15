@@ -8,11 +8,13 @@
 
 #import "ToDoListDataBase.h"
 
+
 @interface ToDoListDataBase()
 
 @property (nonatomic, strong) NSArray<ToDoItem *> *data;
 
 @end
+
 
 @implementation ToDoListDataBase
 
@@ -28,7 +30,8 @@
 
 - (id)init
 {
-	if (self = [super init]) {
+	if (self = [super init])
+	{
 		ToDoItem *firstItem = [[ToDoItem alloc] initWithTitle:@"Insurance" content:@"Purchase car insurance"];
 		ToDoItem *secondItem = [[ToDoItem alloc] initWithTitle:@"Mortage" content:@"Pay for mortage"];
 		ToDoItem *thirdItem = [[ToDoItem alloc] initWithTitle:@"Tax refund" content:@"Issue a tax refund"];

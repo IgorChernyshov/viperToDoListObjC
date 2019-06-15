@@ -8,10 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import "ToDoListViewController.h"
-#import "ToDoListPresenter.h"
-#import "ToDoListInteractor.h"
 
 NS_ASSUME_NONNULL_BEGIN
+
 
 @interface ToDoListModuleBuilder : NSObject
 

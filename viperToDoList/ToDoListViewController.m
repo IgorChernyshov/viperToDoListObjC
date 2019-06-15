@@ -8,6 +8,7 @@
 
 #import "ToDoListViewController.h"
 
+
 @interface ToDoListViewController()
 
 @property (nonatomic, strong) UITableView *tableView;
@@ -15,7 +16,11 @@
 
 @end
 
+
 @implementation ToDoListViewController
+
+
+#pragma mark - View Controller's Lifecycle
 
 - (void)viewDidLoad
 {
@@ -24,6 +29,9 @@
 	[self configureUI];
 	[self.eventHandler loadToDoItems];
 }
+
+
+#pragma mark - Configure UI
 
 - (void)configureUI
 {

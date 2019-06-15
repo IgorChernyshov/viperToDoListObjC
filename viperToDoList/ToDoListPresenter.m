@@ -8,7 +8,11 @@
 
 #import "ToDoListPresenter.h"
 
+
 @implementation ToDoListPresenter
+
+
+#pragma mark - ToDoListOutputProtocol
 
 - (void)receiveToDoItems:(nonnull NSArray<ToDoItem *> *)todos
 {
@@ -20,6 +24,9 @@
 	}
 	[self.view showTodos:[todosViewModel copy]];
 }
+
+
+#pragma mark - ToDoListViewEventHandlerProtocol
 
 - (void)loadToDoItems
 {

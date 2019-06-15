@@ -9,13 +9,20 @@
 #import "ToDoListInteractor.h"
 #import "ToDoListDataBase.h"
 
+
 @implementation ToDoListInteractor
+
+
+#pragma mark - ToDoListItemsProviderProtocol
 
 - (void)provideToDoItems
 {
 	NSArray<ToDoItem *> *todos = [self getDataFromDataBase];
 	[self.output receiveToDoItems:todos];
 }
+
+
+#pragma mark - Private methods
 
 - (NSArray<ToDoItem *> *)getDataFromDataBase
 {
