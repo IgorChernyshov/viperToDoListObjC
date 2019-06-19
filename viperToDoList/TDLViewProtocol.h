@@ -1,5 +1,5 @@
 //
-//  ToDoListModuleBuilder.h
+//  TDLViewProtocol.h
 //  viperToDoList
 //
 //  Created by Igor Chernyshov on 15/06/2019.
@@ -7,14 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ToDoListViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 
-@interface ToDoListModuleBuilder : NSObject
+@protocol TDLViewProtocol <NSObject>
 
-- (ToDoListViewController *)buildToDoListModule;
+- (void)showTodos:(NSArray<NSString *> *)todos;
 
 @end
 

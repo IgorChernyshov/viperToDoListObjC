@@ -1,5 +1,5 @@
 //
-//  ToDoListViewProtocol.h
+//  TDLToDoItemsProviderProtocol.h
 //  viperToDoList
 //
 //  Created by Igor Chernyshov on 15/06/2019.
@@ -11,9 +11,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 
-@protocol ToDoListViewProtocol <NSObject>
+@protocol TDLToDoItemsProviderProtocol <NSObject>
 
-- (void)showTodos:(NSArray<NSString *> *)todos;
+- (void)provideToDoItems;
 
 @end
 

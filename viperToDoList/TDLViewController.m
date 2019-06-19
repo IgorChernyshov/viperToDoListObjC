@@ -1,15 +1,15 @@
 //
-//  ToDoListViewController.m
+//  TDLViewController.m
 //  viperToDoList
 //
 //  Created by Igor Chernyshov on 15/06/2019.
 //  Copyright © 2019 Igor Chernyshov. All rights reserved.
 //
 
-#import "ToDoListViewController.h"
+#import "TDLViewController.h"
 
 
-@interface ToDoListViewController()
+@interface TDLViewController()
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSArray<NSString *> *todos;
@@ -17,7 +17,7 @@
 @end
 
 
-@implementation ToDoListViewController
+@implementation TDLViewController
 
 
 #pragma mark - View Controller's Lifecycle

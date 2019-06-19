@@ -1,5 +1,5 @@
 //
-//  ToDoListOutputProtocol.h
+//  TDLViewEventHandlerProtocol.h
 //  viperToDoList
 //
 //  Created by Igor Chernyshov on 15/06/2019.
@@ -7,14 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ToDoItem.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 
-@protocol ToDoListOutputProtocol <NSObject>
+@protocol TDLViewEventHandlerProtocol <NSObject>
 
-- (void)receiveToDoItems:(NSArray<ToDoItem *> *)todos;
+- (void)loadToDoItems;
 
 @end
 

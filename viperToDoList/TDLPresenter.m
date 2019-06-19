@@ -1,23 +1,23 @@
 //
-//  ToDoListPresenter.m
+//  TDLPresenter.m
 //  viperToDoList
 //
 //  Created by Igor Chernyshov on 15/06/2019.
 //  Copyright © 2019 Igor Chernyshov. All rights reserved.
 //
 
-#import "ToDoListPresenter.h"
+#import "TDLPresenter.h"
 
 
-@implementation ToDoListPresenter
+@implementation TDLPresenter
 
 
 #pragma mark - ToDoListOutputProtocol
 
-- (void)receiveToDoItems:(nonnull NSArray<ToDoItem *> *)todos
+- (void)receiveToDoItems:(nonnull NSArray<TDLToDoItem *> *)todos
 {
 	NSMutableArray<NSString *> *todosViewModel = [NSMutableArray new];
-	for (ToDoItem *item in todos)
+	for (TDLToDoItem *item in todos)
 	{
 		NSString *todo = [NSString stringWithFormat:@"%@ - %@", item.title, item.content];
 		[todosViewModel addObject:todo];

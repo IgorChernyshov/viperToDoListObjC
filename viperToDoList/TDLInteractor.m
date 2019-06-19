@@ -1,32 +1,32 @@
 //
-//  ToDoListInteractor.m
+//  TDLInteractor.m
 //  viperToDoList
 //
 //  Created by Igor Chernyshov on 13/06/2019.
 //  Copyright © 2019 Igor Chernyshov. All rights reserved.
 //
 
-#import "ToDoListInteractor.h"
-#import "ToDoListDataBase.h"
+#import "TDLInteractor.h"
+#import "TDLDataBase.h"
 
 
-@implementation ToDoListInteractor
+@implementation TDLInteractor
 
 
 #pragma mark - ToDoListItemsProviderProtocol
 
 - (void)provideToDoItems
 {
-	NSArray<ToDoItem *> *todos = [self getDataFromDataBase];
+	NSArray<TDLToDoItem *> *todos = [self getDataFromDataBase];
 	[self.output receiveToDoItems:todos];
 }
 
 
 #pragma mark - Private methods
 
-- (NSArray<ToDoItem *> *)getDataFromDataBase
+- (NSArray<TDLToDoItem *> *)getDataFromDataBase
 {
-	return [[ToDoListDataBase sharedInstance] loadAllTodos];
+	return [[TDLDataBase sharedInstance] loadAllTodos];
 }
 
 @end

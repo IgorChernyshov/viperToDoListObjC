@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ToDoListModuleBuilder.h"
+#import "TDLFlowBuilder.h"
 
 
 @implementation AppDelegate
@@ -16,8 +16,8 @@
 	CGRect screenSize = [[UIScreen mainScreen] bounds];
 	self.window = [[UIWindow alloc] initWithFrame:screenSize];
 	
-	ToDoListModuleBuilder *builder = [ToDoListModuleBuilder new];
-	self.window.rootViewController = [builder buildToDoListModule];
+	TDLFlowBuilder *builder = [TDLFlowBuilder new];
+	self.window.rootViewController = [builder buildToDoListFlow];
 	
 	[self.window makeKeyAndVisible];
 	return YES;

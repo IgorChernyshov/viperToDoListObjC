@@ -1,15 +1,15 @@
 //
-//  ToDoItem.m
+//  TDLToDoItem.m
 //  viperToDoList
 //
 //  Created by Igor Chernyshov on 12/06/2019.
 //  Copyright © 2019 Igor Chernyshov. All rights reserved.
 //
 
-#import "ToDoItem.h"
+#import "TDLToDoItem.h"
 
 
-@interface ToDoItem()
+@interface TDLToDoItem()
 
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, strong) NSString *content;
@@ -17,7 +17,7 @@
 @end
 
 
-@implementation ToDoItem
+@implementation TDLToDoItem
 
 - (instancetype)initWithTitle:(NSString *)title content:(NSString *)content
 {
