@@ -24,8 +24,8 @@
 	self = [super init];
 	if (self)
 	{
-		_title = title;
-		_content = content;
+		_title = [title copy];
+		_content = [content copy];
 	}
 	return self;
 }
