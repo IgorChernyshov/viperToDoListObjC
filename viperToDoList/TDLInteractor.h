@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "TDLToDoItemsProviderProtocol.h"
 #import "TDLOutputProtocol.h"
+@class TDLDataBase;
+
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -16,6 +18,10 @@ NS_ASSUME_NONNULL_BEGIN
 @interface TDLInteractor : NSObject <TDLToDoItemsProviderProtocol>
 
 @property (nonatomic, weak) id<TDLOutputProtocol> output;
+
+- (instancetype)initWithDataBase:(TDLDataBase *)dataBase;
++ (instancetype)new NS_UNAVAILABLE;
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

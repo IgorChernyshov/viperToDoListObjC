@@ -10,7 +10,25 @@
 #import "TDLDataBase.h"
 
 
+@interface TDLInteractor()
+
+@property (nonatomic, strong) TDLDataBase *dataBase;
+
+@end
+
 @implementation TDLInteractor
+
+
+#pragma mark - Initializer
+
+- (instancetype)initWithDataBase:(TDLDataBase *)dataBase
+{
+	self = [super init];
+	if (self) {
+		_dataBase = dataBase;
+	}
+	return self;
+}
 
 
 #pragma mark - ToDoListItemsProviderProtocol

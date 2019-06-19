@@ -9,7 +9,7 @@
 #import "TDLFlowBuilder.h"
 #import "TDLPresenter.h"
 #import "TDLInteractor.h"
-
+#import "TDLDataBase.h"
 
 @implementation TDLFlowBuilder
 
@@ -17,7 +17,8 @@
 {
 	TDLViewController *view = [TDLViewController new];
 	TDLPresenter *presenter = [TDLPresenter new];
-	TDLInteractor *interactor = [TDLInteractor new];
+	TDLDataBase *dataBase = [TDLDataBase new];
+	TDLInteractor *interactor = [[TDLInteractor alloc] initWithDataBase:dataBase];
 	
 	view.eventHandler = presenter;
 	presenter.view = view;
