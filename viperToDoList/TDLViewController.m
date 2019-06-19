@@ -9,6 +9,9 @@
 #import "TDLViewController.h"
 
 
+static NSString * const TDLMainTableViewCellReuseID = @"reuseID";
+
+
 @interface TDLViewController()
 
 @property (nonatomic, strong) UITableView *tableView;
@@ -38,7 +41,7 @@
 	self.view.backgroundColor = [UIColor whiteColor];
 	
 	self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
-	[self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"reuseID"];
+	[self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:TDLMainTableViewCellReuseID];
 	self.tableView.dataSource = self;
 	[self.view addSubview:self.tableView];
 }
@@ -53,7 +56,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"reuseID"];
+	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:TDLMainTableViewCellReuseID];
 	cell.textLabel.text = self.todos[indexPath.row];
 	return cell;
 }
