@@ -11,8 +11,8 @@
 
 @interface TDLToDoItem()
 
-@property (nonatomic, strong) NSString *title;
-@property (nonatomic, strong) NSString *content;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSString *content;
 
 @end
 

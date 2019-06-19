@@ -12,7 +12,7 @@
 @interface TDLViewController()
 
 @property (nonatomic, strong) UITableView *tableView;
-@property (nonatomic, strong) NSArray<NSString *> *todos;
+@property (nonatomic, copy) NSArray<NSString *> *todos;
 
 @end
 
