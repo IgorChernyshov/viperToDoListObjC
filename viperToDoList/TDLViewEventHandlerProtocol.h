@@ -1,5 +1,5 @@
 //
-//  ToDoListDataBase.h
+//  TDLViewEventHandlerProtocol.h
 //  viperToDoList
 //
 //  Created by Igor Chernyshov on 15/06/2019.
@@ -7,15 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ToDoItem.h"
+
 
 NS_ASSUME_NONNULL_BEGIN
 
 
-@interface ToDoListDataBase : NSObject
+@protocol TDLViewEventHandlerProtocol <NSObject>
 
-+ (instancetype)sharedInstance;
-- (NSArray<ToDoItem *> *)loadAllTodos;
+- (void)loadToDoItems;
 
 @end
 

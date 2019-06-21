@@ -1,5 +1,5 @@
 //
-//  ToDoListViewEventHandlerProtocol.h
+//  TDLFlowBuilder.h
 //  viperToDoList
 //
 //  Created by Igor Chernyshov on 15/06/2019.
@@ -7,13 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "TDLViewController.h"
+
 
 NS_ASSUME_NONNULL_BEGIN
 
 
-@protocol ToDoListViewEventHandlerProtocol <NSObject>
+@interface TDLFlowBuilder : NSObject
 
-- (void)loadToDoItems;
++ (TDLViewController *)buildToDoListFlow;
 
 @end
 

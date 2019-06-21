@@ -1,23 +1,26 @@
 //
-//  ToDoListViewController.m
+//  TDLViewController.m
 //  viperToDoList
 //
 //  Created by Igor Chernyshov on 15/06/2019.
 //  Copyright © 2019 Igor Chernyshov. All rights reserved.
 //
 
-#import "ToDoListViewController.h"
+#import "TDLViewController.h"
 
 
-@interface ToDoListViewController()
+static NSString * const TDLMainTableViewCellReuseID = @"reuseID";
+
+
+@interface TDLViewController()
 
 @property (nonatomic, strong) UITableView *tableView;
-@property (nonatomic, strong) NSArray<NSString *> *todos;
+@property (nonatomic, copy) NSArray<NSString *> *todos;
 
 @end
 
 
-@implementation ToDoListViewController
+@implementation TDLViewController
 
 
 #pragma mark - View Controller's Lifecycle
@@ -38,7 +41,7 @@
 	self.view.backgroundColor = [UIColor whiteColor];
 	
 	self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
-	[self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"reuseID"];
+	[self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:TDLMainTableViewCellReuseID];
 	self.tableView.dataSource = self;
 	[self.view addSubview:self.tableView];
 }
@@ -53,7 +56,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"reuseID"];
+	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:TDLMainTableViewCellReuseID];
 	cell.textLabel.text = self.todos[indexPath.row];
 	return cell;
 }

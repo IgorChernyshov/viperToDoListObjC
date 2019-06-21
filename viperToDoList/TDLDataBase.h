@@ -1,5 +1,5 @@
 //
-//  ToDoListOutputProtocol.h
+//  TDLDataBase.h
 //  viperToDoList
 //
 //  Created by Igor Chernyshov on 15/06/2019.
@@ -7,14 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ToDoItem.h"
+@class TDLToDoItem;
+
 
 NS_ASSUME_NONNULL_BEGIN
 
 
-@protocol ToDoListOutputProtocol <NSObject>
+@interface TDLDataBase : NSObject
 
-- (void)receiveToDoItems:(NSArray<ToDoItem *> *)todos;
+- (NSArray<TDLToDoItem *> *)loadAllTodos;
 
 @end
 

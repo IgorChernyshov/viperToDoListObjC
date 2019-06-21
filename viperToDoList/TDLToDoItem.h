@@ -1,5 +1,5 @@
 //
-//  ToDoItem.h
+//  TDLToDoItem.h
 //  viperToDoList
 //
 //  Created by Igor Chernyshov on 12/06/2019.
@@ -8,14 +8,18 @@
 
 #import <Foundation/Foundation.h>
 
+
 NS_ASSUME_NONNULL_BEGIN
 
 
-@interface ToDoItem : NSObject
+@interface TDLToDoItem : NSObject
 
-@property (nonatomic, strong, readonly) NSString *title;
-@property (nonatomic, strong, readonly) NSString *content;
+@property (nonatomic, copy, readonly) NSString *title;
+@property (nonatomic, copy, readonly) NSString *content;
+
 - (instancetype)initWithTitle:(NSString *)title content:(NSString *)content;
++ (instancetype)new NS_UNAVAILABLE;
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 
