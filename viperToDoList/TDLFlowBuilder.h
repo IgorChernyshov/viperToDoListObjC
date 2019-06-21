@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TDLFlowBuilder : NSObject
 
-- (TDLViewController *)buildToDoListFlow;
++ (TDLViewController *)buildToDoListFlow;
 
 @end
 

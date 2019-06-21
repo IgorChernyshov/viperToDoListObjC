@@ -13,7 +13,7 @@
 
 @implementation TDLFlowBuilder
 
-- (TDLViewController *)buildToDoListFlow
++ (TDLViewController *)buildToDoListFlow
 {
 	TDLViewController *view = [TDLViewController new];
 	TDLPresenter *presenter = [TDLPresenter new];

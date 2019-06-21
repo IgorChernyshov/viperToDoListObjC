@@ -15,9 +15,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 	CGRect screenSize = [[UIScreen mainScreen] bounds];
 	self.window = [[UIWindow alloc] initWithFrame:screenSize];
-	
-	TDLFlowBuilder *builder = [TDLFlowBuilder new];
-	self.window.rootViewController = [builder buildToDoListFlow];
+	self.window.rootViewController = [TDLFlowBuilder buildToDoListFlow];
 	
 	[self.window makeKeyAndVisible];
 	return YES;
