@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "TDLToDoItem.h"
+@class TDLToDoItem;
+
 
 NS_ASSUME_NONNULL_BEGIN
 
