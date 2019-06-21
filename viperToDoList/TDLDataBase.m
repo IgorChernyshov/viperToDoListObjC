@@ -7,11 +7,12 @@
 //
 
 #import "TDLDataBase.h"
+#import "TDLToDoItem.h"
 
 
 @interface TDLDataBase()
 
-@property (nonatomic, strong) NSArray<TDLToDoItem *> *data;
+@property (nonatomic, copy) NSArray<TDLToDoItem *> *data;
 
 @end
 
