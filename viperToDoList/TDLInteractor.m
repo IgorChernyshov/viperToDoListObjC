@@ -44,7 +44,7 @@
 
 - (NSArray<TDLToDoItem *> *)getDataFromDataBase
 {
-	return [[TDLDataBase sharedInstance] loadAllTodos];
+	return [self.dataBase loadAllTodos];
 }
 
 @end

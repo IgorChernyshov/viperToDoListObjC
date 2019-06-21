@@ -15,7 +15,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TDLDataBase : NSObject
 
-+ (instancetype)sharedInstance;
 - (NSArray<TDLToDoItem *> *)loadAllTodos;
 
 @end
