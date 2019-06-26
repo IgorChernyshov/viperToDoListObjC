@@ -1,5 +1,5 @@
 //
-//  TDLFlowBuilder.h
+//  TDLFlowCreator.h
 //  viperToDoList
 //
 //  Created by Igor Chernyshov on 15/06/2019.
@@ -13,7 +13,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 
-@interface TDLFlowBuilder : NSObject
+@interface TDLFlowCreator : NSObject
 
 + (TDLViewController *)buildToDoListFlow;
 

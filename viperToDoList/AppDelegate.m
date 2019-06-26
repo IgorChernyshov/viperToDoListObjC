@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "TDLFlowBuilder.h"
+#import "TDLFlowCreator.h"
 
 
 @implementation AppDelegate
@@ -15,7 +15,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 	CGRect screenSize = [[UIScreen mainScreen] bounds];
 	self.window = [[UIWindow alloc] initWithFrame:screenSize];
-	self.window.rootViewController = [TDLFlowBuilder buildToDoListFlow];
+	self.window.rootViewController = [TDLFlowCreator buildToDoListFlow];
 	
 	[self.window makeKeyAndVisible];
 	return YES;
